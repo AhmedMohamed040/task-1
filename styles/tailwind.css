@@ -25,7 +25,6 @@ p {
 .animation-hover:hover:after {
   @apply left-0 w-full;
 }
-
 /* Slideshow */
 .slick-dots li {
   @apply inline-block;

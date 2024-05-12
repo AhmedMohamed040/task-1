@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
+import Image from "next/image"
 import Testimoni from "./Testimoni";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline.";
@@ -10,7 +10,36 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
+  const gallery = [
+    {
+      image: "/assets/gallery/img-1.jpeg",
+      text:'Egypt Luxury Tours'
+    },
+    {
+      image: "/assets/gallery/img-2.jpg",
+      text:'Egypt Cultural Tours'
+    },
+    {
+      image: "/assets/gallery/img-3.jpeg",
+      text:'Egypt Cultural Tours'
+    },
+    {
+      image: "/assets/gallery/img-4.jpeg",
+      text:'Egypt Cultural Tours'
+    },
+    {
+      image: "/assets/gallery/img-5.jpeg",
+      text:'Egypt Cultural Tours'
+    },
+    {
+      image: "/assets/gallery/img-6.jpeg",
+      text:'Egypt Cultural Tours'
+    },
+    {
+      image: "/assets/gallery/img-7.jpg",
+      text:'Egypt Cultural Tours'
+    },
+  ]
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
@@ -57,13 +86,13 @@ const Pricing = () => {
               If you are a fan of the desert and exciting experiences, you can visit the White Desert and you can also go on fun safaris, Egypt Trips offers you the best trips and <strong className="text-sky-500">Cairo tours</strong>, Luxor tours and also enchanting <strong className="text-sky-500">adventures tours</strong> in the desert, If you prefer luxury trips on the seashore in Egypt, enjoy Egypt tours and diving to see the wonderful fish and coral reefs in the Red Sea. 
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+          <div className="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
           <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center shadow-sm rounded-xl"
+                className="mx-auto max-w-[350px] flex flex-col justify-center items-center shadow-sm rounded-xl"
                 whileHover={{
-                  scale : 1.1,
+                  scale :  0.9,
                   transition: {
                     duration: .2
                   }
@@ -72,12 +101,12 @@ const Pricing = () => {
               <div className="relative top-[-17px]">
                 <Image
                   src="/assets/preview.jpg"
-                  width={350}
-                  height={250}
-                  
-                  objectFit="cover"
-                  alt="Premium Plan"
-                  className="rounded-xl "
+                width={350}
+                height={250}
+                className="rounded-xl "
+                
+                  // Make the image display full width
+                
                 />
               </div>
               <p className="px-4 mr-[auto] text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
@@ -89,12 +118,12 @@ const Pricing = () => {
                  discover the timeless allure of the Nile River as you sail from Luxor, known as the "world's greatest open-air museum," to the picturesqu`}
                 </li>
               </ul>
-              <div className="text-sm rounded-lg min-h-[100px] p-2 bg-[#3eb9e91a] flex flex-col align-top text-left mb-8  mt-12">
+              <div className="min-w-[300px] text-sm rounded-lg min-h-[100px] p-2 bg-[#3eb9e91a] flex flex-col align-top text-left mb-8  mt-12">
                 <p className=" text-black-500 mb-2  mt-4 text-left">
                 🗺️ Egypt Day Tours, Cairo Day Tours
                 </p>
                 <hr className=" border-b-0 border-white-500 opacity-[0.5] " />
-                <p className=" text-black-500  mt-4 ">
+                <p className=" text-black-500  mt-4 invisible">
               &#128337; 5 Days / 4 Nights
                 </p>
                 <p className="text-2xl text-black-600 font-medium text-left my-2 ">
@@ -106,9 +135,9 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center shadow-sm rounded-xl"
+                className="mx-auto max-w-[350px] flex flex-col justify-center items-center shadow-sm rounded-xl"
                 whileHover={{
-                  scale : 1.1,
+                  scale :  0.9,
                   transition: {
                     duration: .2
                   }
@@ -134,9 +163,9 @@ const Pricing = () => {
                  discover the timeless allure of the Nile River as you sail from Luxor, known as the "world's greatest open-air museum," to the picturesqu`}
                 </li>
               </ul>
-              <div className="text-sm rounded-lg min-h-[100px] p-2 bg-[#3eb9e91a] flex flex-col align-top text-left mb-8  mt-12">
+              <div className="min-w-[300px] text-sm rounded-lg min-h-[100px] p-2 bg-[#3eb9e91a] flex flex-col align-top text-left mb-8  mt-12">
                 <p className=" text-black-500 mb-2  mt-4 text-left">
-                🗺️ Egypt Nile Cruises, Dahabiya Nile Cruises
+                🗺️ Egypt Nile Cruises, Dahabiya Nile 
                 </p>
                 <hr className=" border-b-0 border-white-500 opacity-[0.5] " />
                 <p className=" text-black-500  mt-4 ">
@@ -151,9 +180,9 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="text-left flex flex-col justify-center items-center shadow-sm rounded-xl"
+                className="mx-auto max-w-[350px] text-left flex flex-col justify-center items-center shadow-sm rounded-xl"
                 whileHover={{
-                  scale : 1.1,
+                  scale :  0.9,
                   transition: {
                     duration: .2
                   }
@@ -179,9 +208,9 @@ const Pricing = () => {
                  discover the timeless allure of the Nile River as you sail from Luxor, known as the "world's greatest open-air museum," to the picturesqu`}
                 </li>
               </ul>
-              <div className="text-sm rounded-lg min-h-[100px] p-2 bg-[#3eb9e91a] flex flex-col align-top text-left mb-8  mt-12">
+              <div className="min-w-[300px] text-sm rounded-lg min-h-[100px] p-2 bg-[#3eb9e91a] flex flex-col align-top text-left mb-8  mt-12">
                 <p className=" text-black-500 mb-2  mt-4 text-left">
-                🗺️ Egypt Nile Cruises, Dahabiya Nile Cruises
+                🗺️ Egypt Nile Cruises, Dahabiya Nile 
                 </p>
                 <hr className=" border-b-0 border-white-500 opacity-[0.5] " />
                 <p className=" text-black-500  mt-4 ">
@@ -196,52 +225,19 @@ const Pricing = () => {
           </div>
         </div>
         <div className="flex flex-col w-full my-16">
-          <ScrollAnimationWrapper>
+         {/*  <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
-              Huge Global Network of Fast VPN{" "}
+             Sub Category{" "}
+             <hr className="mx-auto max-w-[210px] border-b mt-4 border-sky-500  " />
+
             </motion.h3>
-            <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
-              See LaslesVPN everywhere to make it easier for you when you move
-              locations.
-            </motion.p>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
-            <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
-              <Maps className="w-full h-auto" />
-            </motion.div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
-            <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
-              {/* <Netflix className="h-18 w-auto" /> */}
-              <img
-                src="/assets/Icon/amazon.png"
-                className="h-14 w-auto mt-4 lg:mt-2"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/netflix.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/reddit.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/discord.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/spotify.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-            </motion.div>
-          </ScrollAnimationWrapper>
+          </ScrollAnimationWrapper> */}
+          {/* Tours */}
+            
+            
+        
         </div>
       
       </div>
