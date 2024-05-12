@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: 'LaslesVPN',
-  siteName: 'LaslesVPN',
+  title: 'MasterMind',
+  siteName: 'MasterMind',
   description:
     'Landing page VPN LaslesVPN Best VPN For Privacy, Country and Cheapest',
   // change base url of your web (without '/' at the end)
@@ -90,7 +90,7 @@ const SeoHead = (props) => {
       <meta name='msapplication-TileColor' content='#F53838' />
       <meta
         name='msapplication-TileImage'
-        content='/favicon/ms-icon-144x144.png'
+        content='/favicon/android-chrome-512x512.png'
       />
       {/* Accent color on supported browser */}
       <meta name='theme-color' content='#F53838' />
@@ -103,51 +103,51 @@ const favicons = [
   {
     rel: 'apple-touch-icon',
     sizes: '57x57',
-    href: '/favicon/apple-icon-57x57.png',
+    href: '/favicon/apple-touch-icon.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '60x60',
-    href: '/favicon/apple-icon-60x60.png',
+    href: '/favicon/apple-touch-icon.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '72x72',
-    href: '/favicon/apple-icon-72x72.png',
+    href: '/favicon/apple-touch-icon.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '76x76',
-    href: '/favicon/apple-icon-76x76.png',
+    href: '/favicon/apple-touch-icon.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '114x114',
-    href: '/favicon/apple-icon-114x114.png',
+    href: '/favicon/apple-touch-icon.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '120x120',
-    href: '/favicon/apple-icon-120x120.png',
+    href: '/favicon/apple-touch-icon.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '144x144',
-    href: '/favicon/apple-icon-144x144.png',
+    href: '/favicon/apple-touch-icon.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '152x152',
-    href: '/favicon/apple-icon-152x152.png',
+    href: '/favicon/apple-touch-icon.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '180x180',
-    href: '/favicon/apple-icon-180x180.png',
+    href: '/favicon/android-chrome-512x512.png',
   },
   {
     rel: 'mask-icon',
-    href: '/favicon/safari-pinned-tab.svg',
+    href: '/favicon/android-chrome-192x192.png',
     color: '#F59A9A',
   },
   {
@@ -158,25 +158,25 @@ const favicons = [
     rel: 'icon',
     type: 'image/png',
     sizes: '16x16',
-    href: '/favicon/favicon-16x16.png',
+    href: '/favicon/android-chrome-192x192.png',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '32x32',
-    href: '/favicon/favicon-32x32.png',
+    href: '/favicon/android-chrome-192x192.png',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '96x96',
-    href: '/favicon/favicon-96x96.png',
+    href: '/favicon/android-chrome-192x192.png',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '192x192',
-    href: '/favicon/android-icon-192x192.png',
+    href: '/favicon/android-chrome-192x192.png',
   },
   {
     rel: 'manifest',

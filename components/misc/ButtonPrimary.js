@@ -4,7 +4,7 @@ const ButtonPrimary = ({ children, addClass }) => {
   return (
     <button
       className={
-        "py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none " +
+        "py-1 text-sm lg:py-2 px-1 lg:px-2 text-white-500 font-thin rounded-md bg-sky-500 hover:shadow-sky-md transition-all " +
         addClass
       }
     >

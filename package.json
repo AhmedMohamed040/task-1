@@ -1,18 +1,20 @@
 {
   "name": "next-landing-vpn",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "deploy": "next build && next export && next-nginx-routes"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "autoprefixer": "^10.4.12",
     "framer-motion": "6.0.0",
     "next": "^12.3.1",
+    "next-nginx-routes": "^1.2.1",
     "postcss": "^8.4.17",
     "postcss-import": "^13.0.0",
     "react": "^17.0.2",
