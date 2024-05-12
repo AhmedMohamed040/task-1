@@ -49,7 +49,7 @@ const Header = () => {
           <div className="col-start-1 col-end-2 flex items-center max-w-[150px] max-h-[40px]">
             <Logo />
           </div>
-          <ul className="hidden lg:flex col-start-4 col-end-8 text-sky-500  items-center">
+          <ul className="hidden xl:flex col-start-4 col-end-8 text-sky-500  items-center">
             <LinkScroll
               activeClass="active"
               to="home"
@@ -68,60 +68,39 @@ const Header = () => {
             >
               Home
             </LinkScroll>
-            <LinkScroll
-              activeClass="travel"
-              to="travel"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("travel");
-              }}
+            <div
+             
               className={
-                "text-white-500 font-thin text-xs xl:text-sm px-4 py-2 mx-2  cursor-pointer animation-hover inline-block relative" +
+                "text-white-500 font-thin text-xs xl:text-sm px-4 py-2 mx-2  cursor-pointer  inline-block relative" +
                 (activeLink === "travel"
                   ? " text-white-500 animation-active "
                   : " text-sky-500 hover:text-white-500 ")
               }
             >
               Egypt Travel &#160; <i className="rotate-45 arrow right"></i>
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="trous"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("trous");
-              }}
+            </div>
+            <div
+            
               className={
-                "text-white-500 font-thin text-xs xl:text-sm px-4 py-2 mx-2  cursor-pointer animation-hover inline-block relative" +
+                "text-white-500 font-thin text-xs xl:text-sm px-4 py-2 mx-2  cursor-pointer  inline-block relative" +
                 (activeLink === "trous"
                   ? " text-white-500 animation-active "
                   : " text-sky-500 hover:text-white-500 ")
               }
             >
               Egypt Day Tours  &#160; <i className="rotate-45 arrow right"></i>
-            </LinkScroll>
-            <LinkScroll
-              activeClass="cruisses"
-              to="cruisses"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("cruisses");
-              }}
+            </div>
+            <div
+           
               className={
-                "text-white-500 font-thin text-xs xl:text-sm px-4 py-2 mx-2  cursor-pointer animation-hover inline-block relative" +
+                "text-white-500 font-thin text-xs xl:text-sm px-4 py-2 mx-2  cursor-pointer  inline-block relative" +
                 (activeLink === "cruisses"
                   ? " text-white-500 animation-active "
                   : " text-sky-500 hover:text-white-500 ")
               }
             >
               Egypt Nile Cruisses &#160; <i className="rotate-45 arrow right"></i>
-            </LinkScroll>
+            </div>
             <LinkScroll
               activeClass="why"
               to="why"
@@ -152,7 +131,7 @@ const Header = () => {
       </header>
       {/* Mobile Navigation */}
 
-      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
+      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20  shadow-t ">
         <div className="bg-white-500 sm:px-3">
           <ul className="flex w-full justify-between items-center text-sky-500">
             <LinkScroll
@@ -165,7 +144,7 @@ const Header = () => {
                 setActiveLink("home");
               }}
               className={
-                "text-sky-500 -1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
+                "text-sky-500  cursor-pointer -1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "home"
                   ? "  border-sky-100 text-sky-500"
                   : " border-transparent")
@@ -189,16 +168,16 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="feature"
+              to="trous"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("feature");
+                setActiveLink("trous");
               }}
               className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "feature"
+                "mx-1  cursor-pointer sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
+                (activeLink === "trous"
                   ? "  border-sky-100 text-sky-500"
                   : " border-transparent ")
               }
@@ -221,21 +200,21 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="pricing"
+              to="cruisses"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("pricing");
+                setActiveLink("cruisses");
               }}
               className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "pricing"
+                "mx-1  cursor-pointer sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
+                (activeLink === "cruisses"
                   ? "  border-sky-100 text-sky-500"
                   : " border-transparent ")
               }
             >
-              <svg
+                <svg
                 className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
@@ -246,23 +225,23 @@ const Header = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                 />
               </svg>
-              الباقات
+              Egypt Nile Cruisses
             </LinkScroll>
             <LinkScroll
               tiveClass="active"
-              to="testimoni"
+              to="why"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("testimoni");
+                setActiveLink("why");
               }}
               className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "testimoni"
+                "mx-1 cursor-pointer sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
+                (activeLink === "why"
                   ? "  border-sky-100 text-sky-500"
                   : " border-transparent ")
               }
@@ -281,7 +260,7 @@ const Header = () => {
                   d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                 />
               </svg>
-              راي المستخدمين
+             Why us?
             </LinkScroll>
           </ul>
         </div>
