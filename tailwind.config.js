@@ -14,12 +14,13 @@ module.exports = {
       lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
       xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       t: "0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-      orange: "0px 20px 20px -15px rgba(245,56,56,0.81) ",
-      "orange-md": "0px 20px 40px -15px rgba(245,56,56,0.81) ",
+      sky: "0px 20px 20px -15px rgba(33, 150, 243, 0.81) ",
+      "sky-md": "0px 20px 40px -15px rgba(33, 150, 243, 0.81) ",
       none: "none",
     },
     colors: {
-      transparent: "transparent",
+      transparent: 'transparent',
+      current: 'currentColor',
       black: {
         500: "#4F5665",
         600: "#0B132A",
@@ -27,6 +28,11 @@ module.exports = {
       orange: {
         100: "#FFECEC",
         500: "#F53855",
+      },
+      sky: {
+        50: "#edf6ff",
+        100: "#3eb9e9",
+        500: "#3465b2",
       },
       green: {
         500: "#2FAB73",
