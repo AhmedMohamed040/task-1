@@ -10,7 +10,7 @@ export default function Home() {
       <SeoHead title='EG-vacation' />
       <Layout>
         <Hero />
-        <Feature />
+       
         <Pricing />
       </Layout>
     </>
